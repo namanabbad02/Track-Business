@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle, #f4f4f9, #e2e8f0); /* Subtle gradient background */
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('http://localhost:3000/home_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+  transform: translateY(-2px);
+}
+
+.user-profile {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Main Section */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  text-align: center;
+  background: linear-gradient(to right, #1c97a8, #00a8cc); /* Gradient background */
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-banner h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.welcome-banner p {
+  font-family: cursive;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Quick Access */
+.quick-access {
+  margin-bottom: 2rem;
+  /* background-color: #ffffff; */
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.5); 
+
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tile {
+  background:  #ffffff80; 
+  backdrop-filter: blur(10px); 
+  background-color: #ffffff80; 
+
+  border-radius: 8px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  flex: 1 1 calc(20% - 1rem); /* Adjust the width of each tile */
+  min-width: 150px; /* Minimum width for each tile */
+}
+
+.tile .icon {
+  font-size: 48px;
+  color: #007b8f; /* Teal color */
+  margin-bottom: 10px;
+  
+  
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+/* Analytics Overview */
+.analytics-overview {
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.5); 
+
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.analytics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  
+}
+
+.analytics-card {
+  background:  #ffffff80; /* Gradient card background */
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.5); 
+
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.analytics-card:hover {
+  transform: translateY(-4px);
+  
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.analytics-card p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: #bdc3c7;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ecf0f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .welcome-banner h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-banner p {
+    font-size: 1rem;
+  }
+}
+
+/* User Management Section */
+.user-management {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-management h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.user-management div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-management input[type="text"],
+.user-management input[type="email"] {
+  padding: 0.75rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.user-management button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-management button.create-user {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+.user-management button.create-user:hover {
+  background-color: #34495e;
+}
+
+.user-management ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.user-management li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-management li:last-child {
+  border-bottom: none;
+}
+
+.user-management li span {
+  flex: 1;
+}
+
+.user-management li button {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-management li button:hover {
+  background-color: #c0392b;
+}
+
+.user-management .logout-button,
+.user-management .delete-admin-button {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+.user-management .logout-button:hover,
+.user-management .delete-admin-button:hover {
+  background-color: #2c3e50;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Custom height, adjust as needed */
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 1rem; /* Add space below the slider */
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}

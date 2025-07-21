@@ -1,0 +1,96 @@
+/* Define the color palette */
+:root {
+    --primary-color: #1c536c; /* Deep slate blue for main elements */
+    --secondary-color: #6c7a89; /* Neutral gray for secondary elements */
+    --accent-color: #f5cb5c; /* Soft gold for highlights */
+    --background-color: #f4f4f9; /* Light gray for background */
+    --header-bg: var(--primary-color);
+    --header-text: #ffffff; /* White for text on header */
+    --body-text: #2e2e2e; /* Dark gray for body text */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --dark-shadow-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Body and Background */
+  .login-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('http://localhost:3000/CLE ARA NCE.png') no-repeat center center fixed;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+  /* Login Form Container */
+  .Box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+  }
+  
+  /* Typography */
+  .Typography {
+    color: var(--body-text);
+  }
+  
+  /* Tabs */
+  .Tabs {
+    margin-bottom: 20px;
+  }
+  
+  .Tabs .MuiTabs-scroller {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Tabs .MuiTab-root {
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  
+  .Tabs .MuiTab-root.Mui-selected {
+    color: var(--primary-color);
+  }
+  
+  /* Text Fields */
+  .login-input {
+    background: white;
+
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .login-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
+  }
+  
+  /* Button */
+  .Button {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .Button:hover {
+    background: var(--accent-color);
+  }
+  
+  /* Links */
+  .Link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .Link:hover {
+    text-decoration: underline;
+  }

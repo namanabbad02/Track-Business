@@ -1,0 +1,231 @@
+
+
+/* ===== Base Card Styling ===== */
+.seller-card {
+  background: linear-gradient(145deg, #f0f4f8, #ffffff);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.seller-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Heading ===== */
+/* .purchaser {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1c536c;
+  margin-bottom: 35px;
+  letter-spacing: 0.5px;
+} */
+.seller {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 30px;
+  background: #1c536c;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.mandatory {
+  color: #ff1744;
+  font-size: 1.5rem;
+  margin-left: 6px;
+}
+
+/* ===== Form Grid ===== */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* ===== Form Controls ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #37474f;
+}
+.input-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #37474f;
+}
+
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-group:focus,
+.form-group select:focus,
+.input-group textarea:focus {
+  border-color: #2979ff;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(41, 121, 255, 0.1);
+}
+
+/* ===== Suggestion List ===== */
+.input-group {
+  position: relative;
+}
+
+.input-group .suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  z-index: 10;
+  max-height: 220px;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.input-group .suggestions li {
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.input-group .suggestions li:hover,
+.input-group .suggestions .highlight {
+  background-color: #e3f2fd;
+}
+
+.matched-part {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.autocompleted-part {
+  color: #757575;
+}
+
+/* ===== Sub Cards (Notes, Payments) ===== */
+.payment-sub-card {
+  background: #eef4fa;
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 30px;
+  border-left: 6px solid #0dc228;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.payment-sub-card h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.payment-entry {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-entry input {
+  flex: 1;
+  min-width: 160px;
+}
+
+/* ===== Buttons ===== */
+.add-payment {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #47c229, #0cb13e);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.add-payment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(41, 121, 255, 0.3);
+}
+
+.remove-payment {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.remove-payment:hover {
+  color: #b71c1c;
+}
+
+.interest {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* ===== Readonly & Disabled ===== */
+input[readOnly],
+input:disabled {
+  background-color: #f1f1f1;
+  cursor: not-allowed;
+  color: #888;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

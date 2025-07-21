@@ -1,0 +1,89 @@
+/* NavBar container */
+.navbar-wrapper {
+    width: 100%;
+    background-color: #29425c;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar structure */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navbar links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-links ul li:hover {
+    background-color: #5e7690;
+}
+
+
+/* Responsive styles */
+.navbar-toggle {
+    display: block;
+}
+
+.navbar-links {
+    display: none;
+    flex-direction: column;
+    background-color: #29425c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.navbar-links.open {
+    display: flex;
+}
+
+.navbar-links ul li {
+    width: 100%;
+    justify-content: center;
+}

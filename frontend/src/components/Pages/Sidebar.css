@@ -1,0 +1,126 @@
+
+/* Sidebar and overlay styles */
+.sidebar-wrapper {
+    position: relative;
+  }
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #29425c;
+    color: #fff;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 1000;
+}
+
+.sidebar-container.open {
+    transform: translateX(0);
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    background: none;
+    color: #faf4f4;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.sidebar-toggle:hover {
+    color: #ffffff;
+}
+
+.sidebar-toggle.open {
+    color: #faf4f4;
+}
+
+.sidebar-toggle.open:hover {
+    color: #ffffff;
+    background-color: #5e7690;
+}
+
+.sidebar {
+    margin-top: 60px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.sidebar ul li:hover {
+    background: #5e7690;
+}
+
+.sidebar ul li svg {
+    margin-right: 15px;
+}
+
+.sidebar ul li a {
+    color: inherit; /* Ensure the link text color matches the parent */
+    text-decoration: none; /* Remove underline from links */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: none;
+}
+
+/* Overlay for mobile view when sidebar is open */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.sidebar-container.open ~ .overlay {
+    display: block;
+}
+  
+  @media (max-width: 768px) {
+    /* Adjust content layout for smaller screens */
+    .main-content {
+      margin-left: 0;
+    }
+  
+    .sidebar-container {
+      width: 200px;
+    }
+  
+    .sidebar-toggle {
+      left: 10px;
+      top: 10px;
+    }
+  
+    .sidebar-wrapper {
+      z-index: 1001;
+    }
+  }
+  

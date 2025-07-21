@@ -1,0 +1,177 @@
+/* .balance-details-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .detail-item strong {
+    font-weight: bold;
+  }
+  
+  .payment-details {
+    margin-top: 20px;
+  }
+  
+  .payment-subentry {
+    margin-bottom: 10px;
+  }
+  
+  .payment-subentry div {
+    margin: 5px 0;
+  }
+  
+.balance-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-section h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.balance-section p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.balance-section .positive {
+    color: green;
+    font-weight: bold;
+}
+
+.balance-section .negative {
+    color: red;
+    font-weight: bold;
+} */
+
+/* Balance Details Container */
+.balance-details {
+  /* background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  font-family: 'Arial', sans-serif; */
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.balance-details h3 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Details Container */
+/* .details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+} */
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 16px; /* Space between columns and rows */
+  justify-content: center; /* Center align the grid */
+  align-items: start; /* Align items at the start of their grid area */
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+
+/* Individual Detail Row */
+/* .detail {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+} */
+.detail {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 8px 0;
+  padding: 8px;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  border-radius: 4px; /* Rounded corners (optional) */
+  
+}
+
+.value-box {
+  display:inline-block;
+  padding: 4px 8px;
+  margin-left: 8px; /* Space between label and value */
+  font-weight: normal; /* Make value font weight different from the label */
+}
+
+
+
+/* Label Styling */
+.detail span:first-child {
+  color: #4a4a4a;
+}
+
+/* Value Styling */
+.detail span:last-child {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Positive and Negative P & L */
+.detail span.positive {
+  color: green;
+}
+
+.detail span.negative {
+  color: red;
+}
+.detail span.text-red-500 { color: #ef4444; } /* Red */
+.detail span.text-black { color: #000; } /* Black */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .balance-details {
+      padding: 15px 20px;
+  }
+
+  .balance-details h3 {
+      font-size: 1.5rem;
+  }
+
+  .detail {
+      font-size: 0.9rem;
+  }
+}

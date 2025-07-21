@@ -1,0 +1,102 @@
+/* Define the color palette */
+:root {
+    --primary-color: #1c536c; /* Deep slate blue for main elements */
+    --secondary-color: #6c7a89; /* Neutral gray for secondary elements */
+    --accent-color: #f5cb5c; /* Soft gold for highlights */
+    --background-color: #f4f4f9; /* Light gray for background */
+    --header-bg: var(--primary-color);
+    --header-text: #ffffff; /* White for text on header */
+    --body-text: #2e2e2e; /* Dark gray for body text */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --dark-shadow-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background-color);
+    padding: 20px;
+  }
+  
+  /* Welcome Image */
+  .welcome-image {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  
+  .welcome-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  /* Login Form */
+  .login-form {
+    flex: 1;
+    max-width: 50%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  /* Typography */
+  h4 {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Tabs */
+  Tabs {
+    margin-bottom: 20px;
+  }
+  
+  /* Text Fields */
+  TextField {
+    margin-bottom: 20px;
+  }
+  
+  /* Button */
+  Button {
+    background: var(--primary-color);
+    color: var(--header-text);
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  Button:hover {
+    background: var(--accent-color);
+  }
+  
+  /* Links */
+  Link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  Link:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .welcome-image, .login-form {
+      max-width: 100%;
+      margin: 0 auto 20px;
+    }
+  }

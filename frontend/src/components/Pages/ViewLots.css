@@ -1,0 +1,145 @@
+/* LotCards.css */
+/* 
+.lot-cards-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .lot-card-link {
+    text-decoration: none;
+  }
+  
+  .lot-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .lot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .lot-number {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .lot-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .lot-card strong {
+    color: #222;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .lot-card {
+      width: 100%;
+    }
+  } */
+  
+  .lot-cards-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .lot-range-filter,
+  .date-range-filter {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .lot-range-input {
+    width: 120px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .reset-btn {
+    margin-left: 10px;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+  }
+  
+  .lot-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .lot-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .lot-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .lot-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .lot-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  button.ant-btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  button.ant-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  button.ant-btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  
+  button.ant-btn-default:hover {
+    background-color: #f8f9fa;
+    border-color: #bbb;
+  }

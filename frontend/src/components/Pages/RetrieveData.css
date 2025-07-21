@@ -1,0 +1,309 @@
+/* RetrieveData.css */
+
+/* CSS Variables for Consistent Colors */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #333;
+    --background-color: #f9f9f9;
+    --card-background: #fff;
+    --border-color: #ddd;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Purchaser and Seller Details Section */
+.flex-container{
+    gap: 20px;
+    padding: 10px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.card p strong {
+    color: #2980b9;
+}
+/* 
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color); 
+    background-color: #e0f7fa;    
+    border: 2px solid #4a90e2;   
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #4a90e2, #50a9e2);
+    border-radius: 20px;
+    border: 2px solid #4a90e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.company-badge i {
+    margin-right: 8px;
+}
+
+.company-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+.company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #246d97, #236e9c);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap; 
+}
+
+.company-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.company-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.purchaser-company {
+    background: #4a90e2;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.seller-company {
+    background:#28a745;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+}
+
+
+
+/* Balance Details Section */
+.balance-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-section h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.balance-section p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.balance-section .positive {
+    color: green;
+    font-weight: bold;
+}
+
+.balance-section .negative {
+    color: red;
+    font-weight: bold;
+}
+
+/* Flexbox for Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-left,
+.card-right {
+    display: grid;
+    flex: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100%;
+    }
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-summary {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment-summary p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.subpayments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.subpayments-table th, .subpayments-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+.subpayments-table th {
+    background-color: #6c7a89;
+    font-weight: bold;
+}
+
+.subpayments-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.subpayments-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Add to RetrieveData.css */
+.positive {
+    color: green;
+    font-weight: bold;
+}
+
+.negative {
+    color: red;
+    font-weight: bold;
+}
+
+.print-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.print-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background-color: #45a049;
+}
+
