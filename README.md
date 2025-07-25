@@ -19,8 +19,6 @@ A web-based platform built with the  Express.js React Node.js and MySQL for user
 - [License](#license)
 
 
----
-
 
 ## Overview
 
@@ -89,7 +87,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 -   MySQL Server
 
 
----
+
 
 
 ### Installation
@@ -140,8 +138,6 @@ The API is organized into the following modules:
 -   **Tasks:** `/api/tasks` (GET, POST), `/api/tasks/:id` (GET, PUT, DELETE)
 
 
----
-
 
 ## What I Learned
 
@@ -151,13 +147,12 @@ The API is organized into the following modules:
 -   **Centralized Error & Validation Handling:** Implemented centralized middleware for reliable error catching and input validation.
 -   **Environment Configuration:** Utilized environment variables for scalable deployment and easy environment management.
 
----
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+
 
 ## 📬 Contact
 
